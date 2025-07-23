@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .signup-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 40px 30px;
+    text-align: center;
+    width: 300px;
+  }
+  .signup-container h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #262626;
+  }
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+  }
+  .signup-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .signup-container p {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 15px;
+  }
+  .signup-container a {
+    color: #00376b;
+    text-decoration: none;
+  }
+  .gender-options {
+    text-align: left;
+    margin: 10px 0;
+  }
+  .gender-options label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h1>Sign Up</h1>
+  <form>
+    <input type="text" placeholder="Mobile Number or Email" required>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+<form action="/action_page.php">
+  <h2>Please select your gender:</h2>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="others" name="gender" value="Others">
+  <label for="others">Others</label>
+
+    <button type="submit">Sign up</button>
+  </form>
+  <p>By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.</p>
+</div>
+
+</body>
+</html>
